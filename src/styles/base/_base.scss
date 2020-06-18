@@ -1,0 +1,43 @@
+* {
+	box-sizing: border-box;
+}
+
+html {
+	font-size: 62.5%;
+}
+
+body {
+	color: $dark-grey;
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans",
+		"Droid Sans", "Helvetica Neue", sans-serif;
+	font-size: $m-size;
+	line-height: 1.6;
+}
+
+button {
+	cursor: pointer;
+}
+
+button:disabled {
+	cursor: default;
+}
+
+.is-active {
+	font-weight: bold;
+}
+
+p {
+	font-family: $raleway-font;
+}
+
+@media (max-width: $desktop-breakpoint) {
+	p {
+		font-size: $font-size-small
+	}
+	h1 {
+		font-size: 3.0rem !important;
+	}
+	h3 {
+		font-size: 2.4rem !important;
+	}
+}
