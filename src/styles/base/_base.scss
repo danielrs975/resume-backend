@@ -8,10 +8,14 @@ html {
 
 body {
 	color: $dark-grey;
-	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans",
+	font-family: $raleway-font, -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans",
 		"Droid Sans", "Helvetica Neue", sans-serif;
 	font-size: $m-size;
 	line-height: 1.6;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: $righteous-font !important;
 }
 
 button {
