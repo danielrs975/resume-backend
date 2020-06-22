@@ -4,7 +4,7 @@
  */
 import React from 'react';
 import { Router, Route, Switch } from 'react-router-dom';
-import { createBrowserHistory as createHistory } from 'history';
+import createHistory from 'history/createBrowserHistory';
 import PrivateRoute from './PrivateRoute';
 
 // Components
@@ -20,10 +20,10 @@ export const AppRouter = () => {
         <Router history={history}>
             <div>
                 <Switch>
-                    <Route path="/" component={LoginPage} exact={true} />
                     <PrivateRoute path="/dashboard" component={DashboardPage} />
                     <PrivateRoute path="/profile" component={ProfilePage} />
                     <PrivateRoute path="/projects" component={ProjectsPage} />
+                    <Route path="/" component={LoginPage} />
                 </Switch>
             </div>
         </Router>
