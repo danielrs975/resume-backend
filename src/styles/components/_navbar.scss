@@ -10,3 +10,24 @@
         font-size: $font-size-large !important;
     }
 }
+
+.menu {
+    color: $clear-grey !important;
+    & .MuiTypography-root {
+        font-family: $righteous-font;
+        font-size: $font-size-small;
+    }
+    & .MuiSvgIcon-root {
+        color: $clear-grey;
+    }
+}
+
+.MuiPaper-root {
+    background: darken($color: $dark-grey, $amount: 1%) !important;
+}
+
+@media (min-width: 600px) {
+    .makeStyles-drawerClose-8 {
+        width: 57px !important;
+    }
+}

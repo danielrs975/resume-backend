@@ -6,6 +6,7 @@ button {
 
 .button--menu {
     & .MuiSvgIcon-root {
+        color: $clear-grey !important;
         font-size: $font-size-large !important;
     }
 }
