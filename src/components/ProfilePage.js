@@ -7,7 +7,9 @@ import React from 'react'
 const ProfilePage = () => {
     return (
         <div>
-            Profile Page
+            <div className="content-container">
+                Profile Page
+            </div>
         </div>
     )
 }

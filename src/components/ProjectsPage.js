@@ -6,7 +6,9 @@ import React from 'react'
 const ProjectsPage = () => {
     return (
         <div>
-            Projects page
+            <div className="content-container">
+                Projects page
+            </div>
         </div>
     )
 }

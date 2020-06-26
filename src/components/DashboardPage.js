@@ -7,7 +7,9 @@ import React from 'react'
 export const DashboardPage = () => {
     return (
         <div>
-            Hi this is the dashboard page
+            <div className="content-container">
+                Hi this is the dashboard page
+            </div>
         </div>
     )
 }

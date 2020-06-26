@@ -15,15 +15,17 @@ import { Link } from 'react-router-dom';
 const NavBar = (props) => {
 	const classes = useStyles();
 	const [open, setOpen] = useState(false);
-	const handleDrawerOpen = () => {
+    const handleDrawerOpen = () => {
 		setOpen(true);
 	}
 	const handleDrawerClose = () => {
 		setOpen(false);
 	}
 	const goToProfile = () => {
-		console.log(props);
 		props.history.push('/profile');
+	}
+	const goToProjects = () => {
+		props.history.push('/projects');
 	}
 	return (
 		<div className={classes.root}>
@@ -74,7 +76,7 @@ const NavBar = (props) => {
 						</ListItemIcon>
 						<ListItemText primary="Profile" />
 					</ListItem>
-					<ListItem button >
+					<ListItem button onClick={goToProjects}>
 						<ListItemIcon>
 							<WorkIcon fontSize="large"/>
 						</ListItemIcon>
