@@ -42,7 +42,7 @@ const NavBar = (props) => {
 							<MenuIcon />
 						</IconButton>}
 						<Typography variant="h6">
-							<Link to="/dashboard">Portfolio Admin Page</Link>
+							<Link to="/dashboard" className="button button--link">Portfolio Admin Page</Link>
 						</Typography>
 					</div>
 					<Button color="inherit" className="button">Logout</Button>
