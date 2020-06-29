@@ -12,10 +12,10 @@ const PrivateRoute = ({ component: Component, ...rest }) => {
             {...rest}
             component={(props) => (
                 <div>
-                    <NavBar {...props} />
-                    <div className="section-container">
+                    <NavBar {...props} component={Component} />
+                    {/* <div className="section-container">
                         <Component {...props} />
-                    </div>
+                    </div> */}
                 </div>
             )}
         />

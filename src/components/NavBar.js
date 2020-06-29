@@ -12,7 +12,7 @@ import WorkIcon from '@material-ui/icons/Work';
 import { useStyles } from '../styles/material/navbar';
 import { Link } from 'react-router-dom';
 
-const NavBar = (props) => {
+const NavBar = ({component: Component, ...props}) => {
 	const classes = useStyles();
 	const [open, setOpen] = useState(false);
     const handleDrawerOpen = () => {
@@ -29,9 +29,11 @@ const NavBar = (props) => {
 	}
 	return (
 		<div className={classes.root}>
-			<AppBar position="fixed" className={clsx(classes.appBar, {
-				[classes.appBarShift]: open,
-			})}>
+			<AppBar position="fixed" 
+				className={clsx(classes.appBar, {
+					[classes.appBarShift]: open,
+				})}
+			>
 				<Toolbar className="navbar">
 					<div className="navbar__brand">
 						{!open && <IconButton
@@ -44,7 +46,7 @@ const NavBar = (props) => {
 							<MenuIcon />
 						</IconButton>}
 						<Typography variant="h6">
-							<Link to="/dashboard" className="button button--link">Portfolio Admin Page</Link>
+							<Link to="#" className="button button--link">Portfolio Admin Page</Link>
 						</Typography>
 					</div>
 					<Button color="inherit" className="button">Logout</Button>
@@ -84,6 +86,13 @@ const NavBar = (props) => {
 					</ListItem>
 				</List>
 			</Drawer>
+			<main
+				className={classes.content}
+			>
+				<div className={classes.toolbar}/>
+				{/* <Typography paragraph>Hola</Typography> */}
+				<Component />
+			</main>
 		</div>
 	);
 };
