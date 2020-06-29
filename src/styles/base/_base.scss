@@ -34,6 +34,21 @@ p {
 	font-family: $raleway-font;
 }
 
+label.Mui-focused, .MuiInputBase-input {
+	font-family: $raleway-font !important;
+}
+.MuiInputBase-input {
+	font-size: $font-size-xsmall !important;
+}
+.MuiInputLabel-root {
+	font-family: $raleway-font !important;
+	font-size: $font-size-xsmall !important;
+}
+.MuiFormHelperText-contained {
+	font-size: 1.1rem !important;
+	font-family: $raleway-font !important;
+}
+
 @media (max-width: $desktop-breakpoint) {
 	p {
 		font-size: $font-size-small

@@ -1,0 +1,13 @@
+.form {
+    display: flex;
+    flex-direction: column;
+    padding: $m-size 0;
+}
+
+.form__input {
+    margin: $s-size 0 !important;
+}
+
+.form__input--image {
+    text-align: center;
+}
