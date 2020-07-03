@@ -15,3 +15,13 @@ button {
         font-size: $font-size-large !important;
     }
 }
+
+.button--form {
+    background-color: $dark-blue !important;
+    color: $clear-grey !important;
+    font-family: $raleway-font !important;
+    font-weight: bold !important;
+    .save-icon {
+        margin: 0 0.2rem;
+    }
+}
