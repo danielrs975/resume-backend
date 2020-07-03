@@ -49,6 +49,11 @@ label.Mui-focused, .MuiInputBase-input {
 	font-family: $raleway-font !important;
 }
 
+.red-background {
+	background: red !important;
+	color: white !important;
+}
+
 @media (max-width: $desktop-breakpoint) {
 	p {
 		font-size: $font-size-small

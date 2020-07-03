@@ -1,4 +1,7 @@
 button {
+    font-family: $raleway-font !important;
+    font-weight: bold !important;
+    color: $clear-grey !important;
     & .MuiButton-label {
         font-size: $font-size-small;
     }
@@ -18,10 +21,12 @@ button {
 
 .button--form {
     background-color: $dark-blue !important;
-    color: $clear-grey !important;
-    font-family: $raleway-font !important;
-    font-weight: bold !important;
     .save-icon {
         margin: 0 0.2rem;
     }
+}
+
+.button--cancel {
+    color: $clear-grey !important;
+    background-color: red !important;
 }
