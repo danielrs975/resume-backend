@@ -30,3 +30,9 @@ button {
     color: $clear-grey !important;
     background-color: red !important;
 }
+
+.button--add {
+    width: 100%;
+    background: $dark-blue !important;
+    padding: $s-size 0 !important;
+}
