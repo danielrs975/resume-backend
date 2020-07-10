@@ -14,4 +14,11 @@
 
 .form--links {
     flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    & .form__input {
+        width: 28rem;
+    }
+    padding: $s_size 0;
+    height: auto;
 }
